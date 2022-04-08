@@ -2,7 +2,9 @@ const template = document.createElement("template");
 template.innerHTML = `
     <style>
     nav#luc-header {
-        width: 100%;
+        width: 100vw;
+        max-width: 900px;
+        flex: 1;
         background: #111;
         display: flex;
         justify-content: space-between;
@@ -10,13 +12,15 @@ template.innerHTML = `
         padding: 0 1rem;
         box-sizing: border-box;
         border-bottom: 1px dotted rgb(104, 104, 104);
+        margin-bottom: 1.4rem;
     }
     nav#luc-header ul {
         display: flex;
     }
     nav#luc-header ul li {
-        margin-left: 1rem;
+        margin-left: 1.4rem;
         transition: 250ms;
+        list-style: none;
     }
     nav#luc-header ul li:hover {
         transform: scale(1.1);
