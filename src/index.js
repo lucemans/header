@@ -53,25 +53,25 @@ template.innerHTML = `
     </style>
     <nav id="luc-header">
         <a href="/">
-            <img src="https://avatars.githubusercontent.com/u/10339043?v=4" alt="Logo"/>
+            <img src="https://header.luc.computer/public/500x500.webp" alt="Logo"/>
         </a>
         <div style="flex: 1;"></div>
         <ul>
             <li>
                 <a href="https://luc.computer/" aria-describedby="linkcomputer">💻</a>
-                <div id="linkcomputer" class="headertooltip">
+                <div id="linkcomputer" hidden role="tooltip" class="headertooltip">
                     Article Collection
                 </div>
             </li>
             <li>
                 <a href="https://luc.show/" aria-describedby="linkshow">👨🏼‍💻</a>
-                <div id="linkshow" class="headertooltip">
+                <div id="linkshow" hidden role="tooltip" class="headertooltip">
                     Presentations and Slides
                 </div>
             </li>
             <li>
                 <a href="https://luc.contact/" aria-describedby="linkcontact">📟</a>
-                <div id="linkcontact" class="headertooltip">
+                <div id="linkcontact" hidden role="tooltip" class="headertooltip">
                     Contact
                 </div>
             </li>
