@@ -2,7 +2,7 @@ const template = document.createElement("template");
 template.innerHTML = `
     <style>
     nav#luc-header {
-        width: 100vw;
+        width: calc(100vw - 2rem);
         max-width: 900px;
         flex: 1;
         display: flex;
@@ -12,12 +12,9 @@ template.innerHTML = `
         box-sizing: border-box;
         border-bottom: 1px dotted rgb(104, 104, 104);
         margin-bottom: 1.4rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         font-size: 18px;
-    }
-    @media screen and (max-width: 900px) {
-        nav#luc-header {
-            padding: 0 1rem;
-        }
     }
     nav#luc-header ul {
         display: flex;
