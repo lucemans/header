@@ -3,6 +3,8 @@ template.innerHTML = `
     <style>
     :host {
         width: 100%;
+        display: flex;
+        justify-items: center;
     }
     nav#luc-header {
         width: calc(100% - 2rem);
