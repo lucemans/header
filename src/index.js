@@ -14,6 +14,11 @@ template.innerHTML = `
         margin-bottom: 1.4rem;
         font-size: 18px;
     }
+    @media screen and (max-width: 900px) {
+        nav#luc-header {
+            padding: 0 1rem;
+        }
+    }
     nav#luc-header ul {
         display: flex;
     }
@@ -53,7 +58,7 @@ template.innerHTML = `
     </style>
     <nav id="luc-header">
         <a href="/">
-            <img src="https://header.luc.computer/public/500x500.webp" alt="Logo"/>
+            <img src="https://header.luc.computer/public/500x500.webp" alt="Home"/>
         </a>
         <div style="flex: 1;"></div>
         <ul>
