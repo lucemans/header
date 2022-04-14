@@ -1,8 +1,11 @@
 const template = document.createElement("template");
 template.innerHTML = `
     <style>
+    :root {
+        width: 100%;
+    }
     nav#luc-header {
-        width: calc(100vw - 2rem);
+        width: calc(100% - 2rem);
         max-width: 900px;
         flex: 1;
         display: flex;
