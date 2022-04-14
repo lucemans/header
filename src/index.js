@@ -4,7 +4,7 @@ template.innerHTML = `
     :host {
         width: 100%;
         display: flex;
-        justify-items: center;
+        justify-content: center;
     }
     nav#luc-header {
         width: calc(100% - 2rem);
