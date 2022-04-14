@@ -1,7 +1,7 @@
 const template = document.createElement("template");
 template.innerHTML = `
     <style>
-    :root {
+    :host {
         width: 100%;
     }
     nav#luc-header {
