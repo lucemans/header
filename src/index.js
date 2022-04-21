@@ -91,9 +91,39 @@ const templateFooter = document.createElement("template");
 templateFooter.innerHTML = `
     <style>
     :host {
-        width: 100%;
+        width: 100vw;
         display: flex;
         justify-content: center;
+        flex-shrink: 1;
+        max-width: 100%;
+    }
+    @media screen and (max-width: 900px) {
+        :host nav#luc-footer {
+            max-width: 100vw;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        :host nav#luc-footer ul {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+            text-align: right;
+            font-size: 2rem;
+            gap: 1rem;
+        }
+        nav#luc-footer img {
+        }
+        nav#luc-footer a#luc-footer-id {
+
+        }
+        nav#luc-footer a#luc-footer-id:hover img {
+        }
+        nav#luc-footer a#luc-footer-id span {
+            font-size: 2rem;
+        }
+        nav#luc-footer a#luc-footer-id:hover span {
+        }
     }
     nav#luc-footer {
         width: calc(100% - 2rem);
