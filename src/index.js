@@ -61,7 +61,7 @@ templateHeader.innerHTML = `
     </style>
     <nav id="luc-header">
         <a href="/">
-            <img src="https://header.luc.computer/public/500x500.webp" alt="Home"/>
+            <img src="https://header.luc.computer/public/500x500.webp" alt="Home" oncontextmenu="javascript:document.location.href='https://assets.luc.directory/';return false;"/>
         </a>
         <div style="flex: 1;"></div>
         <ul>
@@ -209,7 +209,7 @@ class LucHeader extends HTMLElement {
 
     connectedCallback() {
         this.shadowRoot.appendChild(templateHeader.content.cloneNode(true));
-      }
+    }
 }
 
 class LucFooter extends HTMLElement {
