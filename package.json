@@ -1,15 +1,28 @@
 {
   "name": "header",
   "version": "1.0.0",
-  "main": "dist/index.js",
   "repository": "git@github.com:lucemans/header.git",
   "author": "Lucemans <luc@lucemans.nl>",
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^2.4.1"
+    "parcel": "^2.4.1",
+    "typescript": "^4.7.4"
   },
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "rm -r dist; parcel build src/index.js; cp -r ./public ./dist"
+  },
+  "dependencies": {
+    "@stencil/core": "^2.17.0",
+    "lit": "^2.2.6",
+    "lit-html": "^2.2.6",
+    "omi": "^6.23.0",
+    "preact": "^10.8.2",
+    "preact-custom-element": "^4.2.1",
+    "preact-jsx-runtime": "^1.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "twind": "^0.16.17",
+    "vite": "^2.9.12"
   }
 }

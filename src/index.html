@@ -3,15 +3,20 @@
 
 <head>
 	<meta charset="UTF-8">
-	<script src="./index.js" type="module"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="./index.tsx" type="module"></script>
 	<style>
-		html, body {
+		html,
+		body {
 			margin: 0;
 		}
+
 		body {
 			display: flex;
 			align-items: center;
-			background: #111;
+			background: #121212;
+			color: white;
 			flex-direction: column;
 			min-height: 100vh;
 			box-sizing: border-box;
@@ -22,9 +27,14 @@
 </head>
 
 <body>
-	<luc-header></luc-header>
-	<div style="flex: 1;">Body</div>
-	<luc-footer></luc-footer>
+	<!-- <luc-header></luc-header> -->
+	<my-counter>
+		<div style="padding: 1rem;">
+			This is where the page goes :shrug:
+		</div>
+	</my-counter>
+	<!-- <luc-footer2></luc-footer2> -->
+	<!-- <luc-footer></luc-footer> -->
 </body>
 
 </html>
