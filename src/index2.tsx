@@ -183,7 +183,7 @@ export class Wrapper extends LitElement {
 
         .mobile {
             display: none;
-            width: 100vw;
+            width: 100%;
             padding: 2rem;
         }
 
