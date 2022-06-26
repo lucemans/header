@@ -1,5 +1,6 @@
 import { html, css, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
+import workletURL from "../public/500x500.webp?url";
 
 type Route = { name: string; url: string; emoji?: string };
 const routes: Route[] = [
@@ -133,7 +134,8 @@ export class Wrapper extends LitElement {
             color: white;
             text-decoration: none;
         }
-        .list a:hover {
+        .list a:hover,
+        .list a:focus {
             font-weight: bold;
             color: #121212;
             background: white;
@@ -198,7 +200,7 @@ export class Wrapper extends LitElement {
                 background: #121212;
                 display: none;
                 overflow-y: auto;
-                padding-bottom: 200px;
+                padding-bottom: 50px;
             }
             .sidebar-box:checked ~ .side {
                 display: block;
@@ -214,36 +216,38 @@ export class Wrapper extends LitElement {
 
     render() {
         return html`
-            <input type="checkbox" class="sidebar-box" id="sidebar" />
-            <div class="mobile">
-                <label for="sidebar">🔗 Navigation</label>
-            </div>
-            <div class="side">
-                <div class="top">
-                    <label for="sidebar">X</label>
-                    <div class="top-spread"></div>
-                    <div class="top-in">
-                        <img
-                            src="https://assets.luc.directory/1_by_1.5832226a.png"
-                        />
-                        <div class="user">
-                            <div class="name">Luc</div>
-                            <div class="tag">@lucemans</div>
+            <div>
+                <input type="checkbox" class="sidebar-box" id="sidebar" />
+                <div class="side">
+                    <div class="top">
+                        <label for="sidebar">X</label>
+                        <div class="top-spread"></div>
+                        <div class="top-in">
+                            <img src="${workletURL}" oncontextmenu="javascript:window.open('https://assets.luc.directory/','_blank');return false;"/>
+                            <div class="user">
+                                <div class="name">Luc</div>
+                                <div class="tag">@lucemans</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="list">
-                    ${routes.map(
-                        (route) => html`
-                            <a href="${route.url}"
-                                ><div class="emoji">${route.emoji}</div>
-                                ${route.name} <span>${route.url}</span></a
-                            >
-                        `,
-                    )}
+                    <div class="list">
+                        ${routes.map(
+                            (route) => html`
+                                <a href="${route.url}"
+                                    ><div class="emoji">${route.emoji}</div>
+                                    ${route.name} <span>${route.url}</span></a
+                                >
+                            `,
+                        )}
+                    </div>
                 </div>
             </div>
-            <slot></slot>
+            <div>
+                <div class="mobile">
+                    <label for="sidebar">🔗 Navigation</label>
+                </div>
+                <slot></slot>
+            </div>
         `;
     }
 
