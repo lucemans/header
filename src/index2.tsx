@@ -86,7 +86,7 @@ const routes: Route[] = [
     },
 ];
 
-@customElement("my-counter")
+@customElement("luc-wrapper")
 export class Wrapper extends LitElement {
     static styles = css`
         :host {
