@@ -93,10 +93,15 @@ export class Wrapper extends LitElement {
             width: 100%;
             min-height: 100vh;
             display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
         }
         * {
             font-size: 18px;
             box-sizing: border-box;
+        }
+        .body {
+            flex: 1;
         }
         .side {
             /* border: 1px solid white; */
@@ -242,7 +247,7 @@ export class Wrapper extends LitElement {
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="body">
                 <div class="mobile">
                     <label for="sidebar">🔗 Navigation</label>
                 </div>
