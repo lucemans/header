@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "vite src",
-    "build": "rm -r dist; vite build"
+    "build": "rm -r dist; vite build; cp -r public ./dist/public"
   },
   "dependencies": {
     "@stencil/core": "^2.17.0",

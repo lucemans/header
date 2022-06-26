@@ -1,6 +1,6 @@
 import { html, css, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import workletURL from "../public/500x500.webp?url";
+import workletURL from "../public/128x128.webp?url";
 
 type Route = { name: string; url: string; emoji?: string };
 const routes: Route[] = [
