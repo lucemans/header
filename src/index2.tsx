@@ -171,14 +171,17 @@ export class Wrapper extends LitElement {
             background: white;
             color: #121212;
         }
+
         .top .user .name {
             font-weight: bolder;
         }
+
         .top .user .tag {
             color: #888;
         }
 
         .sidebar-box {
+
         }
 
         .mobile {
