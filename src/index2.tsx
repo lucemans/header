@@ -198,7 +198,7 @@ export class Wrapper extends LitElement {
             display: none;
         }
 
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 1400px) {
             :host {
             }
             .side {

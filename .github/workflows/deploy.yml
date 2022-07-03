@@ -1,5 +1,5 @@
 
-name: Deploy to Signal
+name: Deploy to Edgeserver
 
 on:
   push:
