@@ -184,6 +184,17 @@ export class Wrapper extends LitElement {
 
         }
 
+        .mobile-label {
+            width: fit-content;
+            cursor: pointer;
+            padding: 0.3rem 0.5rem;
+            border-radius: 0.3rem;
+        }
+
+        .mobile-label:hover {
+            background: #222;
+        }
+
         .mobile {
             display: none;
             width: 100%;
@@ -209,6 +220,7 @@ export class Wrapper extends LitElement {
                 display: none;
                 overflow-y: auto;
                 padding-bottom: 50px;
+                z-index: 2;
             }
             .sidebar-box:checked ~ .side {
                 display: block;
@@ -252,7 +264,7 @@ export class Wrapper extends LitElement {
             </div>
             <div class="body">
                 <div class="mobile">
-                    <label for="sidebar">🔗 Navigation</label>
+                    <label class="mobile-label" for="sidebar">🔗 Navigation</label>
                 </div>
                 <slot></slot>
             </div>
